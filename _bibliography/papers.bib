@@ -1,115 +1,208 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@inproceedings{eckart-de-castilho-etal-2024-integrating,
+  title     = {Integrating {INCE}p{TION} into larger annotation processes},
+  author    = {Eckart De Castilho, Richard  and
+               Klie, Jan-Christoph  and
+               Gurevych, Iryna},
+  editor    = {Hernandez Farias, Delia Irazu  and
+               Hope, Tom  and
+               Li, Manling},
+  booktitle = {Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing: System Demonstrations},
+  month     = nov,
+  year      = {2024},
+  address   = {Miami, Florida, USA},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2024.emnlp-demo.12/},
+  doi       = {10.18653/v1/2024.emnlp-demo.12},
+  pages     = {110--121},
+  abstract  = {Annotation tools are increasingly only steps in a larger process into which they need to be integrated, for instance by calling out to web services for labeling support or importing documents from external sources. This requires certain capabilities that annotation tools need to support in order to keep up. Here, we define the respective requirements and how popular annotation tools support them. As a demonstration for how these can be implemented, we adapted INCEpTION, a semantic annotation platform offering intelligent assistance and knowledge management. For instance, support for a range of APIs has been added to INCEpTION through which it can be controlled and which allow it to interact with external services such as authorization services, crowdsourcing platforms, terminology services or machine learning services. Additionally, we introduce new capabilities that allow custom rendering of XML documents and even the ability to add new JavaScript-based editor plugins, thereby making INCEpTION usable in an even wider range of annotation tasks.}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{klie-etal-2024-efficient,
+  selected  = {true},
+  title     = {On Efficient and Statistical Quality Estimation for Data Annotation},
+  author    = {Klie, Jan-Christoph  and
+               Haladjian, Juan  and
+               Kirchner, Marc  and
+               Nair, Rahul},
+  editor    = {Ku, Lun-Wei  and
+               Martins, Andre  and
+               Srikumar, Vivek},
+  booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = aug,
+  year      = {2024},
+  address   = {Bangkok, Thailand},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2024.acl-long.837/},
+  doi       = {10.18653/v1/2024.acl-long.837},
+  pages     = {15680--15696},
+  abstract  = {Annotated datasets are an essential ingredient to train, evaluate, compare and productionalize supervised machine learning models. It is therefore imperative that annotations are of high quality. For their creation, good quality management and thereby reliable quality estimates are needed. Then, if quality is insufficient during the annotation process, rectifying measures can be taken to improve it. Quality estimation is often performed by having experts manually label instances as correct or incorrect. But checking all annotated instances tends to be expensive. Therefore, in practice, usually only subsets are inspected; sizes are chosen mostly without justification or regard to statistical power and more often than not, are relatively small. Basing estimates on small sample sizes, however, can lead to imprecise values for the error rate. Using unnecessarily large sample sizes costs money that could be better spent, for instance on more annotations. Therefore, we first describe in detail how to use confidence intervals for finding the minimal sample size needed to estimate the annotation error rate. Then, we propose applying acceptance sampling as an alternative to error rate estimation We show that acceptance sampling can reduce the required sample sizes up to 50{\%} while providing the same statistical guarantees.}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@article{klie-etal-2024-analyzing,
+  selected  = {true},
+  title     = {Analyzing Dataset Annotation Quality Management in the Wild},
+  author    = {Klie, Jan-Christoph  and
+               Eckart de Castilho, Richard  and
+               Gurevych, Iryna},
+  journal   = {Computational Linguistics},
+  volume    = {50},
+  number    = {3},
+  month     = sep,
+  year      = {2024},
+  address   = {Cambridge, MA},
+  publisher = {MIT Press},
+  url       = {https://aclanthology.org/2024.cl-3.1/},
+  doi       = {10.1162/coli_a_00516},
+  pages     = {817--866},
+  abstract  = {Data quality is crucial for training accurate, unbiased, and trustworthy machine learning models as well as for their correct evaluation. Recent work, however, has shown that even popular datasets used to train and evaluate state-of-the-art models contain a non-negligible amount of erroneous annotations, biases, or artifacts. While practices and guidelines regarding dataset creation projects exist, to our knowledge, large-scale analysis has yet to be performed on how quality management is conducted when creating natural language datasets and whether these recommendations are followed. Therefore, we first survey and summarize recommended quality management practices for dataset creation as described in the literature and provide suggestions for applying them. Then, we compile a corpus of 591 scientific publications introducing text datasets and annotate it for quality-related aspects, such as annotator management, agreement, adjudication, or data validation. Using these annotations, we then analyze how quality management is conducted in practice. A majority of the annotated publications apply good or excellent quality management. However, we deem the effort of 30{\%} of the studies as only subpar. Our analysis also shows common errors, especially when using inter-annotator agreement and computing annotation error rates.}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
+@inproceedings{klie-etal-2023-lessons,
+  title     = {Lessons Learned from a Citizen Science Project for Natural Language Processing},
+  author    = {Klie, Jan-Christoph  and
+               Lee, Ji-Ung  and
+               Stowe, Kevin  and
+               {\c{S}}ahin, G{\"o}zde  and
+               Moosavi, Nafise Sadat  and
+               Bates, Luke  and
+               Petrak, Dominic  and
+               Eckart De Castilho, Richard  and
+               Gurevych, Iryna},
+  editor    = {Vlachos, Andreas  and
+               Augenstein, Isabelle},
+  booktitle = {Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics},
+  month     = may,
+  year      = {2023},
+  address   = {Dubrovnik, Croatia},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2023.eacl-main.261},
+  doi       = {10.18653/v1/2023.eacl-main.261},
+  pages     = {3594--3608},
+  abstract  = {Many Natural Language Processing (NLP) systems use annotated corpora for training and evaluation. However, labeled data is often costly to obtain and scaling annotation projects is difficult, which is why annotation tasks are often outsourced to paid crowdworkers. Citizen Science is an alternative to crowdsourcing that is relatively unexplored in the context of NLP. To investigate whether and how well Citizen Science can be applied in this setting, we conduct an exploratory study into engaging different groups of volunteers in Citizen Science for NLP by re-annotating parts of a pre-existing crowdsourced dataset. Our results show that this can yield high-quality annotations and at- tract motivated volunteers, but also requires considering factors such as scalability, participation over time, and legal and ethical issues. We summarize lessons learned in the form of guidelines and provide our code and data to aid future work on Citizen Science.}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@article{10.1162/coli_a_00464,
+  selected = {true},
+  author   = {Klie, Jan-Christoph and Webber, Bonnie and Gurevych, Iryna},
+  title    = {{Annotation Error Detection: Analyzing the Past and Present for a More Coherent Future}},
+  journal  = {Computational Linguistics},
+  volume   = {49},
+  number   = {1},
+  pages    = {157-198},
+  year     = {2023},
+  month    = {03},
+  abstract = {{Annotated data is an essential ingredient in natural language processing for training and evaluating machine learning models. It is therefore very desirable for the annotations to be of high quality. Recent work, however, has shown that several popular datasets contain a surprising number of annotation errors or inconsistencies. To alleviate this issue, many methods for annotation error detection have been devised over the years. While researchers show that their approaches work well on their newly introduced datasets, they rarely compare their methods to previous work or on the same datasets. This raises strong concerns on methods’ general performance and makes it difficult to assess their strengths and weaknesses. We therefore reimplement 18 methods for detecting potential annotation errors and evaluate them on 9 English datasets for text classification as well as token and span labeling. In addition, we define a uniform evaluation setup including a new formalization of the annotation error detection task, evaluation protocol, and general best practices. To facilitate future research and reproducibility, we release our datasets and implementations in an easy-to-use and open source software package.1}},
+  issn     = {0891-2017},
+  doi      = {10.1162/coli_a_00464},
+  url      = {https://doi.org/10.1162/coli\_a\_00464},
+  eprint   = {https://direct.mit.edu/coli/article-pdf/49/1/157/2068980/coli\_a\_00464.pdf}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@article{lee-etal-2022-curriculum-annotation,
+  selected = {true},
+  author   = {Lee, Ji-Ung and Klie, Jan-Christoph and Gurevych, Iryna},
+  title    = {{Annotation Curricula to Implicitly Train Non-Expert Annotators}},
+  journal  = {Computational Linguistics},
+  volume   = {48},
+  number   = {2},
+  pages    = {343-373},
+  year     = {2022},
+  month    = {06},
+  abstract = {{Annotation studies often require annotators to familiarize themselves with the task, its annotation scheme, and the data domain. This can be overwhelming in the beginning, mentally taxing, and induce errors into the resulting annotations; especially in citizen science or crowdsourcing scenarios where domain expertise is not required. To alleviate these issues, this work proposes annotation curricula, a novel approach to implicitly train annotators. The goal is to gradually introduce annotators into the task by ordering instances to be annotated according to a learning curriculum. To do so, this work formalizes annotation curricula for sentence- and paragraph-level annotation tasks, defines an ordering strategy, and identifies well-performing heuristics and interactively trained models on three existing English datasets. Finally, we provide a proof of concept for annotation curricula in a carefully designed user study with 40 voluntary participants who are asked to identify the most fitting misconception for English tweets about the Covid-19 pandemic. The results indicate that using a simple heuristic to order instances can already significantly reduce the total annotation time while preserving a high annotation quality. Annotation curricula thus can be a promising research direction to improve data collection. To facilitate future research—for instance, to adapt annotation curricula to specific tasks and expert annotation scenarios—all code and data from the user study consisting of 2,400 annotations is made available.1}},
+  issn     = {0891-2017},
+  doi      = {10.1162/coli_a_00436},
+  url      = {https://doi.org/10.1162/coli\_a\_00436},
+  eprint   = {https://direct.mit.edu/coli/article-pdf/48/2/343/2029108/coli\_a\_00436.pdf}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+
+@inproceedings{klie-etal-2020-zero,
+  selected  = {true},
+  title     = {{F}rom {Z}ero to {H}ero: {H}uman-{I}n-{T}he-{L}oop {E}ntity {L}inking in {L}ow {R}esource {D}omains},
+  author    = {Klie, Jan-Christoph  and
+               Eckart de Castilho, Richard  and
+               Gurevych, Iryna},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  month     = jul,
+  year      = {2020},
+  address   = {Online},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://www.aclweb.org/anthology/2020.acl-main.624},
+  doi       = {10.18653/v1/2020.acl-main.624},
+  pages     = {6982--6993},
+  abstract  = {Entity linking (EL) is concerned with disambiguating entity mentions in a text against knowledge bases (KB). It is crucial in a considerable number of fields like humanities, technical writing and biomedical sciences to enrich texts with semantics and discover more knowledge. The use of EL in such domains requires handling noisy texts, low resource settings and domain-specific KBs. Existing approaches are mostly inappropriate for this, as they depend on training data. However, in the above scenario, there exists hardly annotated data, and it needs to be created from scratch. We therefore present a novel domain-agnostic Human-In-The-Loop annotation approach: we use recommenders that suggest potential concepts and adaptive candidate ranking, thereby speeding up the overall annotation process and making it less tedious for users. We evaluate our ranking approach in a simulation on difficult texts and show that it greatly outperforms a strong baseline in ranking accuracy. In a user study, the annotation speed improves by 35{\%} compared to annotating without interactive support; users report that they strongly prefer our system. An open-source and ready-to-use implementation based on the text annotation platform INCEpTION (https://inception-project.github.io) is made available.}
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+@inproceedings{eckart-de-castilho-etal-2019-multi,
+  title     = {A Multi-Platform Annotation Ecosystem for Domain Adaptation},
+  author    = {Eckart de Castilho, Richard  and
+               Ide, Nancy  and
+               Kim, Jin-Dong  and
+               Klie, Jan-Christoph  and
+               Suderman, Keith},
+  booktitle = {Proceedings of the 13th Linguistic Annotation Workshop},
+  month     = aug,
+  year      = {2019},
+  address   = {Florence, Italy},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://www.aclweb.org/anthology/W19-4021},
+  doi       = {10.18653/v1/W19-4021},
+  pages     = {189--194},
+  abstract  = {This paper describes an ecosystem consisting of three independent text annotation platforms. To demonstrate their ability to work in concert, we illustrate how to use them to address an interactive domain adaptation task in biomedical entity recognition. The platforms and the approach are in general domain-independent and can be readily applied to other areas of science.}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@inproceedings{boullosa-etal-2018-integrating,
+  title     = {Integrating Knowledge-Supported Search into the {INCE}p{TION} Annotation Platform},
+  author    = {Boullosa, Beto  and
+               Eckart de Castilho, Richard  and
+               Kumar, Naveen  and
+               Klie, Jan-Christoph  and
+               Gurevych, Iryna},
+  booktitle = {Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing: System Demonstrations},
+  month     = nov,
+  year      = {2018},
+  address   = {Brussels, Belgium},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://www.aclweb.org/anthology/D18-2022},
+  doi       = {10.18653/v1/D18-2022},
+  pages     = {127--132},
+  abstract  = {Annotating entity mentions and linking them to a knowledge resource are essential tasks in many domains. It disambiguates mentions, introduces cross-document coreferences, and the resources contribute extra information, e.g. taxonomic relations. Such tasks benefit from text annotation tools that integrate a search which covers the text, the annotations, as well as the knowledge resource. However, to the best of our knowledge, no current tools integrate knowledge-supported search as well as entity linking support. We address this gap by introducing knowledge-supported search functionality into the INCEpTION text annotation platform. In our approach, cross-document references are created by linking entity mentions to a knowledge base in the form of a structured hierarchical vocabulary. The resulting annotations are then indexed to enable fast and yet complex queries taking into account the text, the annotations, and the vocabulary structure.}
+}
+
+@inproceedings{klie-etal-2018-inception,
+  title     = {The {INCE}p{TION} Platform: Machine-Assisted and Knowledge-Oriented Interactive Annotation},
+  author    = {Klie, Jan-Christoph  and
+               Bugert, Michael  and
+               Boullosa, Beto  and
+               Eckart de Castilho, Richard  and
+               Gurevych, Iryna},
+  booktitle = {Proceedings of the 27th International Conference on Computational Linguistics: System Demonstrations},
+  month     = aug,
+  year      = {2018},
+  address   = {Santa Fe, New Mexico},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://www.aclweb.org/anthology/C18-2002},
+  pages     = {5--9},
+  abstract  = {We introduce INCEpTION, a new annotation platform for tasks including interactive and semantic annotation (e.g., concept linking, fact linking, knowledge base population, semantic frame annotation). These tasks are very time consuming and demanding for annotators, especially when knowledge bases are used. We address these issues by developing an annotation platform that incorporates machine learning capabilities which actively assist and guide annotators. The platform is both generic and modular. It targets a range of research domains in need of semantic annotation, such as digital humanities, bioinformatics, or linguistics. INCEpTION is publicly available as open-source software.}
+}
+
+@inproceedings{botschen-etal-2018-multimodal,
+  title     = {Multimodal Frame Identification with Multilingual Evaluation},
+  author    = {Botschen, Teresa  and
+               Gurevych, Iryna  and
+               Klie, Jan-Christoph  and
+               Mousselly-Sergieh, Hatem  and
+               Roth, Stefan},
+  booktitle = {Proceedings of the 2018 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)},
+  month     = jun,
+  year      = {2018},
+  address   = {New Orleans, Louisiana},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://www.aclweb.org/anthology/N18-1134},
+  doi       = {10.18653/v1/N18-1134},
+  pages     = {1481--1491},
+  abstract  = {An essential step in FrameNet Semantic Role Labeling is the Frame Identification (FrameId) task, which aims at disambiguating a situation around a predicate. Whilst current FrameId methods rely on textual representations only, we hypothesize that FrameId can profit from a richer understanding of the situational context. Such contextual information can be obtained from common sense knowledge, which is more present in images than in text. In this paper, we extend a state-of-the-art FrameId system in order to effectively leverage multimodal representations. We conduct a comprehensive evaluation on the English FrameNet and its German counterpart SALSA. Our analysis shows that for the German data, textual representations are still competitive with multimodal ones. However on the English data, our multimodal FrameId approach outperforms its unimodal counterpart, setting a new state of the art. Its benefits are particularly apparent in dealing with ambiguous and rare instances, the main source of errors of current systems. For research purposes, we release (a) the implementation of our system, (b) our evaluation splits for SALSA 2.0, and (c) the embeddings for synsets and IMAGINED words.}
 }

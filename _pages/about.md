@@ -2,24 +2,26 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Applied Scientist at <a href="https://www.amazon.science/">Amazon</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: avatar.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  more_info: 
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi! I am Jan, I hold a doctoral degree from the [Ubiquitous Knowledge Processing]((https://www.informatik.tu-darmstadt.de/ukp/ukp_home/index.en.jsp)) [(UKP) Lab](https://www.informatik.tu-darmstadt.de/ukp/ukp_home/index.en.jsp), Technical University of Darmstadt, Germany. [My research](https://scholar.google.com/citations?user=H_SmU_IAAAAJ&hl=en) focuses on data annotation, especially improving annotation efficiency for NLP. As part of the [INCEpTION project](https://inception-project.github.io/), we built a batteries-included platform for text annotation. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I also am an experienced software engineer, especially in backend development as well as a system architect and administrator. In my free time, I love to learn Mandarin. My research interests revolve around:
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+- Data Annotation
+- Interactive Machine Learning
+- Reinforcement Learning
+- Continual Learning
+- Information Retrieval
+- Large Language Models
